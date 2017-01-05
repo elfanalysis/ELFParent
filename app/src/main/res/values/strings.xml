@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">"ELF Parent "</string>
+    <string name="forgot_title">Please Enter Your Crendentials to change Password</string>
+    <string name="email_text">ENTER YOUR EMAIL </string>
+    <string name="oops">Oops!</string>
+    <string name="nright">Something\'s Not Right</string>
+    <string name="no_int_string">Please make sure you have an Active Internet Connection</string>
+    <string name="instituion_amp_board"><![CDATA[INSTITUION & BOARD]]></string>
+    <string name="feed">Please Enter your Feedback</string>
+    <string name="percentage">%</string>
+    <string name="chapters">CHAPTERS</string>
+    <string name="social">SOCIAL</string>
+    <string name="subject_wise_analysis">Subject Wise Analysis</string>
+    <string name="loading">loading</string>
+    <string name="server_id">AIzaSyDbvvoPr2UMiaxn9zvu256w4_WIdle8pZc</string>
+    <string name="open_source_licences">Open-Source Licences</string>
 </resources>
