@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">@color/white</color>
+    <color name="colorPrimaryDark">@color/black_dribble</color>
+    <color name="white_primary">@color/orang_dribble</color>
+    <color name="colorAccent">@color/pink900</color>
+    <color name="report_divider">#51469A</color>
+    <color name="violet_dark">#302263</color>
+    <color name="green_dark">#33691E</color>
+    <color name="violet_light">#51469A</color>
+    <color name="violet_backdrop_white">#D1C4E9</color>
+    <color name="purple">#BA77FE</color>
+    <color name="home_back_dark_violet">#473F5B</color>
+    <color name="white_light">@color/material_grey100</color>
+    <color name="report_black">#1A1B26</color>
+    <color name="orang_dribble">#FE9C8E</color>
+    <color name="black_viewpager">#35363F</color>
+    <color name="black_900">#424242</color>
+
+    <color name="phsycis_bg">#607D8B</color>
+    <color name="chem_bg">#1E88E5</color>
+    <color name="bio_bg">#66BB6A</color>
+    <color name="maths_bg">#EF5350</color>
+    <color name="white">#FFFFFF</color>
+    <color name="pie_hole">#302263</color>
+
+    <color name="blue400">#42A5F5</color>
+    <color name="indigo900">#1A237E</color>
+    <color name="pink900">#F20654</color>
+    <color name="black_dribble">#343D45</color>
+    <color name="material_grey100">#FFFFFFF</color>
+
 </resources>

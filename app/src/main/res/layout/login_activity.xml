@@ -1,5 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background_gradient">
+
+    <CustomUI.QucikSand
+        android:text="PASSWORD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_txt21_top"
+        android:textColor="@color/pink900"
+        android:id="@+id/textView21"
+        android:textSize="@dimen/loginpage_email_txtsize"
+        android:layout_below="@+id/login_email_box"
+        android:layout_alignLeft="@+id/login_email_box"
+        android:layout_alignStart="@+id/login_email_box" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_button"
+
+        android:textColor="@color/white"
+        android:background="@drawable/pink_login_rounded"
+        android:layout_below="@+id/login_password_box"
+        android:layout_marginTop="@dimen/login_bt_top"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <TextView
+        android:text="Need Help Loggin in ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/login_embox_top"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/login_button"
+        android:layout_centerHorizontal="true" />
+
+    <CustomUI.HelviticaMedium
+        android:text="Login"
+        android:textColor="@color/pink900"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView23"
+        android:layout_marginTop="34dp"
+        android:textSize="@dimen/loginpage_txtsize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:ems="10"
+        android:layout_marginTop="@dimen/login_embox_top"
+        android:id="@+id/login_password_box"
+        android:layout_below="@+id/textView21"
+        android:layout_alignLeft="@+id/textView21"
+        android:layout_alignStart="@+id/textView21"
+        android:layout_alignRight="@+id/login_button"
+        android:layout_alignEnd="@+id/login_button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Type your email"
+        android:textColorHighlight="@color/pink900"
+        android:ems="10"
+        android:cursorVisible="true"
+        android:id="@+id/login_email_box"
+        android:layout_below="@+id/textView15"
+        android:layout_marginTop="@dimen/login_embox_top"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_alignRight="@+id/login_button"
+        android:layout_alignEnd="@+id/login_button" />
+
+    <CustomUI.QucikSand
+        android:text="EMAIL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/pink900"
+        android:id="@+id/textView15"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:textSize="@dimen/loginpage_email_txtsize"
+        android:layout_below="@+id/textView23"
+        android:layout_alignLeft="@+id/login_button"
+        android:layout_alignStart="@+id/login_button" />
+
 
 </RelativeLayout>
