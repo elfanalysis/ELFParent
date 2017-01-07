@@ -111,4 +111,6 @@
     <dimen name="noti_item_bt_textsize">14sp</dimen>
     <dimen name="contactus_bt_top">60dp</dimen>
     <dimen name="contactus_text_top">30dp</dimen>
+    <dimen name="change_profile_txtviewtop">16dp</dimen>
+    <dimen name="change_profile_textsize">15sp</dimen>
 </resources>

@@ -124,4 +124,6 @@
     <dimen name="contactus_text_top">50dp</dimen>
     <dimen name="loginpage_txtsize">29sp</dimen>
     <dimen name="loginpage_email_txtsize">22sp</dimen>
+    <dimen name="change_profile_txtviewtop">35dp</dimen>
+    <dimen name="change_profile_textsize">22sp</dimen>
 </resources>
