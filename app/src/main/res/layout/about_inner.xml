@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat  = "@drawable/ic_elf_logo_36"
+            android:id="@+id/elf_image"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:text="ELF Provides a Platform , where Students can Learn through  Data"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:layout_marginTop="82dp"
+            android:layout_below="@+id/rating_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/about_inner_margin"
+            android:layout_marginEnd="@dimen/about_inner_margin"
+            android:gravity="center_vertical" />
+
+        <Button
+            android:layout_width="match_parent"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:text="Empowering Learning for Future"
+            android:gravity="center"
+            android:textSize="@dimen/about_inner_bt"
+
+
+            android:id="@+id/rating_text"
+            android:layout_height="80dp"
+            android:layout_below="@+id/elf_image"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="41dp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
