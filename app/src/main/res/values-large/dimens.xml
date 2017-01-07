@@ -126,4 +126,10 @@
     <dimen name="loginpage_email_txtsize">22sp</dimen>
     <dimen name="change_profile_txtviewtop">35dp</dimen>
     <dimen name="change_profile_textsize">22sp</dimen>
+    <dimen name="nostudent_top">69dp</dimen>
+    <dimen name="no_student_mtop">150dp</dimen>
+    <dimen name="no_student_txtsize">26sp</dimen>
+    <dimen name="lesson_item_row_txtsize">20sp</dimen>
+    <dimen name="add_student_mtop">138dp</dimen>
+    <dimen name="add_student_txtsize">26sp</dimen>
 </resources>
