@@ -25,11 +25,11 @@ public class HomeActivity extends AppCompatActivity implements Drawer.OnDrawerIt
 
 
     Drawer mDrawer;
-    @BindView(R.id.toolbar)
+   /* @BindView(R.id.toolbar)
     Toolbar toolbar;
     @BindView(R.id.frag_holder)
     FrameLayout fragHolder;
-
+*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity implements Drawer.OnDrawerIt
         ButterKnife.bind(this);
         // nadhaa
 
-        setUpDrawer();
+//        setUpDrawer();
     }
 
     private void setUpDrawer() {
@@ -62,7 +62,7 @@ public class HomeActivity extends AppCompatActivity implements Drawer.OnDrawerIt
 
         mDrawer = new DrawerBuilder()
                 .withActivity(this)
-                .withToolbar(toolbar)
+//                .withToolbar(toolbar)
                 .addDrawerItems(
                         item1, new DividerDrawerItem(),
                         item2, new DividerDrawerItem(),
@@ -70,10 +70,10 @@ public class HomeActivity extends AppCompatActivity implements Drawer.OnDrawerIt
                         item4, new DividerDrawerItem()
                 )
                 .withHasStableIds(true)
-                .withDrawerLayout(R.layout.material_drawer)
+//                .withDrawerLayout(R.layout.material_drawer)
                 .withActionBarDrawerToggle(false)
                 .withOnDrawerItemClickListener(this)
-                .withDrawerLayout(R.layout.material_drawer)
+//                .withDrawerLayout(R.layout.material_drawer)
                 .withAccountHeader(headerResult)
                 .build();
 

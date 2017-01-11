@@ -6,13 +6,13 @@
 
 
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/elf_image_width"
+        android:layout_height="@dimen/elf_image_height"
         android:src="@drawable/ic_elf_rank"
         android:id="@+id/imageView5"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginTop="@dimen/elfic_top"
+        android:layout_marginRight="@dimen/elfic_right"
+        android:layout_marginEnd="@dimen/elfic_right"
         android:layout_alignTop="@+id/imageView4"
         android:layout_toLeftOf="@+id/imageView4"
         android:layout_toStartOf="@+id/imageView4" />
@@ -21,148 +21,151 @@
 
 
     <CustomUI.UbuntuRegular
-        android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/state_renk_txt_width"
+        android:layout_height="@dimen/state_renk_txt_height"
         android:text="State rank"
-        android:textSize="18sp"
+        android:textSize="@dimen/state_txt_size"
         android:gravity="center"
         android:textColor="@color/white_light"
         android:id="@+id/editText"
         android:layout_below="@+id/imageView10"
         android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/state_rank_rightmarg"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="13dp" />
+        android:layout_marginTop="@dimen/staterank_txt_top" />
 
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/satate_img_width"
+        android:layout_height="@dimen/satate_img_height"
         android:src="@drawable/ic_state_rank"
         android:id="@+id/imageView10"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp"
+        android:layout_marginLeft="@dimen/state_ic_left"
+        android:layout_marginStart="@dimen/state_ic_left"
         android:layout_alignTop="@+id/imageView5"
         android:layout_alignLeft="@+id/editText"
         android:layout_alignStart="@+id/editText" />
 
 
     <ImageView
-        android:layout_width="190dp"
-        android:layout_height="180dp"
-        android:src="@drawable/ic_user_profile"
-        android:id="@+id/imageView4"
-        android:layout_marginTop="120dp"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/editText"
-        android:layout_toStartOf="@+id/editText" />
-
-    <CustomUI.UbuntuRegular
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:text="Elf rank"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:textColor="@color/white_light"
-        android:id="@+id/ubuntuRegular"
-        android:layout_below="@id/imageView5"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="13dp"/>
-
-    <CustomUI.HelviticaLight
-        android:layout_width="290dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="70dp"
-        android:layout_below="@id/imageView4"
-        android:layout_marginTop="15dp"
-        android:id="@+id/username"
-        android:text="User name"
-        android:gravity="center"
-        android:textColor="@color/black_900"
-        android:textSize="28sp"/>
-
-
-    <ImageView
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="@dimen/class_icon_width"
+        android:layout_height="@dimen/class_icon_height"
         android:src="@drawable/ic_class"
         android:layout_below="@id/username"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="@dimen/class_icon_left"
         android:id="@+id/imageView7" />
 
 
     <TextView
-        android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/school_txt_width"
+        android:layout_height="@dimen/school_txt_height"
         android:text="Phone Number"
         android:textColor="@color/black_900"
         android:gravity="center"
-        android:textSize="15sp"
+        android:textSize="@dimen/phn_txt_size"
         android:layout_below="@+id/username"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="11dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginLeft="05dp"
+        android:layout_marginRight="@dimen/phone_numbertext_right"
+        android:layout_marginEnd="@dimen/phone_numbertext_right"
+        android:layout_marginLeft="@dimen/phone_number_txt_right"
         android:id="@+id/textView7" />
 
     <ImageView
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="@dimen/phonenum_icon_width"
+        android:layout_height="@dimen/phonenum_icon_height"
         android:src="@drawable/ic_phone_number"
-        android:layout_marginRight="14dp"
-        android:layout_marginEnd="14dp"
+        android:layout_marginRight="@dimen/phone_number_right"
+        android:layout_marginEnd="@dimen/phone_number_right"
         android:id="@+id/imageView9"
         android:layout_alignTop="@+id/imageView7"
         android:layout_toLeftOf="@+id/textView7"
         android:layout_toStartOf="@+id/textView7" />
 
     <TextView
-        android:layout_width="80dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/class_txt_width"
+        android:layout_height="@dimen/class_txt_height"
         android:text="Class"
         android:textColor="@color/black_900"
         android:gravity="center"
-        android:textSize="15sp"
+        android:textSize="@dimen/class_txt_size"
         android:id="@+id/textView4"
         android:layout_below="@+id/username"
         android:layout_toRightOf="@+id/imageView7"
         android:layout_toEndOf="@+id/imageView7" />
 
-    <EditText
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:text="School"
-        android:textColor="@color/black_900"
-        android:textSize="15sp"
-        android:layout_marginTop="59dp"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/textView7"
-        android:layout_alignRight="@+id/username"
-        android:layout_alignEnd="@+id/username" />
-
-    <ImageView
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:src="@drawable/ic_school"
-        android:id="@+id/imageView11"
-        android:layout_alignTop="@+id/editText2"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4"
-        android:layout_marginTop="13dp" />
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="@dimen/elf_button_mtop"
         android:id="@+id/button"
         android:text="FOllow his progress"
         android:textColor="@color/black_900"
         android:background="@drawable/add_student_button"
-        android:textSize="18sp"
+        android:textSize="@dimen/buton_txtsize"
         android:typeface="serif"
         android:layout_below="@+id/editText2"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"/>
+        android:layout_marginLeft="@dimen/button_left"
+        android:layout_marginRight="@dimen/button_left"/>
+
+    <CustomUI.UbuntuRegular
+        android:layout_width="@dimen/elf_txt_width"
+        android:layout_height="@dimen/elf_txt_height"
+        android:text="Elf rank"
+        android:textSize="@dimen/elf_txt_size"
+        android:gravity="center"
+        android:textColor="@color/white_light"
+        android:id="@+id/ubuntuRegular"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_toLeftOf="@+id/imageView4"
+        android:layout_toStartOf="@+id/imageView4" />
+
+    <CustomUI.HelviticaLight
+        android:layout_width="@dimen/username_txt_width"
+        android:layout_height="@dimen/username_txt_height"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="@dimen/username_txt_top"
+        android:id="@+id/username"
+        android:text="User Name"
+        android:gravity="center"
+        android:textColor="@color/black_900"
+        android:textSize="@dimen/username_txt_size"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginStart="12dp" />
+
+    <ImageView
+        android:layout_width="@dimen/userimg_icon_width"
+        android:layout_height="@dimen/userimg_icon_height"
+        android:src="@drawable/ic_user_profile"
+        android:id="@+id/imageView4"
+        android:layout_marginTop="121dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/editText"
+        android:layout_toStartOf="@+id/editText" />
+
+    <ImageView
+        android:layout_width="@dimen/school_icon_width"
+        android:layout_height="@dimen/school_icon_height"
+        android:src="@drawable/ic_school"
+        android:id="@+id/imageView11"
+        android:layout_marginTop="14dp"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_toLeftOf="@+id/username"
+        android:layout_toStartOf="@+id/username" />
+
+    <EditText
+        android:layout_width="@dimen/school_edittxt_width"
+        android:layout_height="@dimen/school_edittxt_height"
+        android:text="School"
+        android:textColor="@color/black_900"
+        android:textSize="@dimen/school_txt_size"
+        android:layout_marginTop="57dp"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/textView7"
+        android:layout_alignRight="@+id/username"
+        android:layout_alignEnd="@+id/username" />
 
 
 </RelativeLayout>
