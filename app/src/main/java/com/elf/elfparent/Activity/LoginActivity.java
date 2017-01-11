@@ -14,6 +14,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
 import com.elf.elfparent.R;
 
 import org.json.JSONArray;
@@ -31,8 +35,9 @@ import butterknife.ButterKnife;
  *
  */
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements Response.Listener<JSONArray>,Response.ErrorListener {
     private static final String TAG = "LOGIN";
+    private static final String LOGIN_URL = "";
     @BindView(R.id.login_button)
     Button loginButton;
     @BindView(R.id.login_password_box)
@@ -124,7 +129,7 @@ public class LoginActivity extends AppCompatActivity {
         }
 
 
-        JsonArrayRequest mRequest = new JsonArrayRequest(Request.Method.POST, LOGIN_URL, mObject, this, this);
+        JsonArrayRequest mRequest = new JsonArrayRequest(Request.Method.POST, LOGIN_URL, mObject, this,this);
         mRequestQueue.addToRequestQue(mRequest);
     }
 
@@ -200,7 +205,7 @@ public class LoginActivity extends AppCompatActivity {
                         mStore.setInstituionName(insName);
 
                         mStore.setStudentPrefrerredSubject(groupId);
-                        mStore.setEmailId(userName);
+                       // mStore.setEmailId(userName);
 
                         //set First to false , so as to not show it again
                         mStore.setIsFirstTime(false);
@@ -221,11 +226,11 @@ public class LoginActivity extends AppCompatActivity {
                     //wrong Details
                     stopDialog();
                     Animation anim = AnimationUtils.loadAnimation(this, R.anim.shake);
-                    memailBox.setText("");
-                    mPasswordBox.setText("");
+                 //   memailBox.setText("");
+                   // mPasswordBox.setText("");
 
-                    memailBox.startAnimation(anim);
-                    mPasswordBox.startAnimation(anim);
+                 //   memailBox.startAnimation(anim);
+                //    mPasswordBox.startAnimation(anim);
                     Toast.makeText(this,"Incorrect Details",Toast.LENGTH_SHORT).show();
 
                 }
@@ -234,14 +239,14 @@ public class LoginActivity extends AppCompatActivity {
                 throw new NullPointerException("Object Cannot e null");
             }
 
-        } catch (JSON<color name="light_green_300" >#AED581</color >Exception e) {
+        } catch (JSONException e) {
 
 
             Log.d(TAG, "onResponse: exception "+e.getLocalizedMessage());
             stopDialog();
 
             Toast.makeText(getApplicationContext(),"Login Failed",Toast.LENGTH_SHORT).show();
-            FirebaseCrash.log("Error in parsing LOgin Info");
+           // FirebaseCrash.log("Error in parsing LOgin Info");
         }
 
     }
