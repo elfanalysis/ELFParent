@@ -25,7 +25,7 @@ import butterknife.ButterKnife;
 public class RegistrationActivity extends AppCompatActivity {
 
 
-    Drawer mDrawer =null;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
